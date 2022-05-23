@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiple Of Numbers</title>
+    </head>
+    <body>
+        <h1>Multiple Of n Nmubers</h1>
+        <div class="Multiple of Numbers">
+            <label>Enter the number: </label> <br>
+            <input id="Num"> <br> <br>
+            <input type="submit" onclick="run()" >
+            <p id="run"></p>
+        </div>
+    </body>
+</html>
+
+<script>
+    function fun(Num)
+   {
+       var sum =0;
+        for(let i=1;i<=Num;i++)
+        {
+            if(i%3==0 ||  i%5==0)
+            {
+            sum=sum + i;
+            }
+        }
+        return sum;
+    }
+    function run()
+    {
+        Num = document.getElementById("Num").value;
+        document.getElementById("run").innerHTML="Sum is :"+fun(Num)
+    }
+</script>

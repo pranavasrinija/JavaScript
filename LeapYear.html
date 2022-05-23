@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Leap Years </Title>
+    </head>
+    <body>
+        <h1>Leap Years</h1>
+        <p>Type a year:</p>
+        <div>
+          <input id="year" type="text" size="24" />
+          <button onclick="leapYears()">Submit</button> <br />
+            <span id="output"></span>
+        </div>
+        <script>
+            function leapYears() 
+            {
+                var input = document.getElementById("year");
+                var year = parseInt(input.value);
+                var output = document.getElementById("output");
+                output.innerHTML = "Next 20 leap years after " + year + ": ";
+  
+                var count = 0;
+                while (count < 20) 
+                {
+                    if (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) {
+                    count++;
+                    output.innerHTML += " " + year;
+                    }
+                    year++;
+                }
+            }
+        </script>
+        
+    </body>
+</html>

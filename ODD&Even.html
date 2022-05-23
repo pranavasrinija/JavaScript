@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input id="Num">
+        <input type="submit" onclick="run()">
+        <p id="run"></p>
+        <script>
+            function fun(Num)
+            {
+                if ( Num %2==0)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            function run()
+            {
+                Num=document.getElementById("Num").value;
+                document.getElementById("run").innerHTML= "Result is : "+fun(Num)
+            }
+
+        </script>
+    </body>
+</html>
