@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+function Rectangle(width,height) {
+  this.width = width;
+  this.height= height;
+}
+
+Rectangle.prototype.Area = function() {
+  return this.width * this.height
+};
+
+const area = new Rectangle(100,20);
+document.getElementById("demo").innerHTML =
+"Area is " + area.Area(); 
+</script>
+
+</body>
+</html>
