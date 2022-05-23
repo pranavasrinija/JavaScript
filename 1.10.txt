@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>  
+function Rectangle(width,height){  
+this.width=width;  
+this.height=height;  
+  
+}  
+e=new Rectangle(103,30); 
+Rect=new Rectangle(100,1000); 
+  
+document.write(e.width+" "+" "+e.height);
+
+document.write("<br>"+Rect.width+" " +" "+Rect.height);
+</script>  
+</body>
+</html>
